@@ -1,0 +1,17 @@
+.custom-toast {
+  background: linear-gradient(135deg, #f8f9fa, #e8e8e9);                             
+  color: var(--gray);
+  padding: 16px 36px 16px 18px;
+  box-shadow: var(--shadow-toast);    
+}
+
+.custom-toast .Toastify__close-button {
+  padding-right: 6px;
+}
+
+.custom-toast .Toastify__close-button:hover {
+  color: var(--gray-dark);
+}
+
+
+

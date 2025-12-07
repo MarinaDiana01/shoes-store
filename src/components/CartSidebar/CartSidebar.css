@@ -1,0 +1,20 @@
+.cart-sidebar-container {
+  right: -400px;
+  width: 350px;
+  overflow-y: auto; 
+  transition: right 0.3s ease;
+  box-shadow: var(--shadow-sidebar);
+}
+
+.cart-sidebar-container.open {
+  right: 0;
+}
+
+.cart-body {
+  min-height: 76vh;
+}
+
+.cart-sidebar-container .cart-remove-button {
+  font-size: 12px;
+  padding: 2px 10px;
+}

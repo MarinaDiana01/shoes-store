@@ -1,0 +1,16 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #5e5d5d;
+  --gray-dark: #515050;
+  --overlay: rgba(0, 0, 0, 0.4);
+  --shadow-toast:0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-sidebar: -2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

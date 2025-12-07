@@ -1,0 +1,23 @@
+.navbar-search {
+  max-width: 500px;
+  padding: 6px 12px;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.cart-item-count {
+  width: 25px;
+  height: 25px;
+}
+
+.cart-overlay {
+  background-color: var(--overlay);
+  cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
