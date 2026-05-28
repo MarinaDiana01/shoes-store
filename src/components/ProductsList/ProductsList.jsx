@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ProductsFilter from "../ProductsFilter/ProductsFilter";
 import ProductCard from "../ProductCard/ProductCard";
-import Spinner from "react-bootstrap/Spinner";
+import { Spinner } from "react-bootstrap";
 import productsError from "../../assets/images/errors/products-error.png";
 import noResults from "../../assets/images/search/no-results.svg";
 
@@ -16,10 +16,10 @@ const ProductsList = ({ searchText, addToCart }) => {
       setLoading(true);
       const [womens, mens] = await Promise.all([
         fetch("https://dummyjson.com/products/category/womens-shoes").then(
-          (serverResponse) => serverResponse.json()
+          (serverResponse) => serverResponse.json(),
         ),
         fetch("https://dummyjson.com/products/category/mens-shoes").then(
-          (serverResponse) => serverResponse.json()
+          (serverResponse) => serverResponse.json(),
         ),
       ]);
 
@@ -57,13 +57,13 @@ const ProductsList = ({ searchText, addToCart }) => {
 
     if (activeFilter === "new" || activeFilter === "sale") {
       filteredProducts = filteredProducts.filter((product) =>
-        product.tag ? product.tag.toLowerCase() === activeFilter : null
+        product.tag ? product.tag.toLowerCase() === activeFilter : null,
       );
     }
 
     if (activeFilter === "womens-shoes" || activeFilter === "mens-shoes") {
       filteredProducts = filteredProducts.filter(
-        (product) => product.category === activeFilter
+        (product) => product.category === activeFilter,
       );
     }
 
@@ -77,7 +77,7 @@ const ProductsList = ({ searchText, addToCart }) => {
 
     if (searchText.trim()) {
       filteredProducts = filteredProducts.filter((product) =>
-        product.title.toLowerCase().includes(searchText.toLowerCase())
+        product.title.toLowerCase().includes(searchText.toLowerCase()),
       );
     }
 
